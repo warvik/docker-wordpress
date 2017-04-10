@@ -37,3 +37,10 @@ services:
        WORDPRESS_DB_PASSWORD: wordpress
 volumes:
     db_data:
+
+
+SHUTDOWN:
+---------
+
+docker-compose down will remove the containers and default network, but preserve your wordpress database. 
+docker-compose down --volumes will remove the containers, default network, and the wordpress database.
